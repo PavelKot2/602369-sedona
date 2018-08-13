@@ -9,20 +9,20 @@
   		<h1 class="visually-hidden">Поиск жилья в городе Седона.</h1>
   		<nav class="main-navigation">
   			<ul class="site-navigation">
-  				<li><a href="#"></a>Информация</li>
-  				<li><a href="#"></a>Фото и Видео</li>
-  				<li><a href="#"></a>Карта штата</li>
+  				<li><a href="#">Информация</a></li>
+  				<li><a href="#">Фото и Видео</a></li>
+  				<li><a href="#">Карта штата</a></li>
   				<li><a>Гостиницы</a></li>
   			</ul>
-  			<a class="header-logo">
+  			<a href="index.html" class="header-logo">
   			  <img src="img/logo.png" width="140" height="71" alt="Логотип Седона">
   			</a>
   		</nav>
   	</header>
     <main class="content">
       <section class="search-form">
+        <form action="#" method="post">
           <div class="pluses-form">
-            <form action="#" method="post">
               <h2>Инфраструктура:</h2>
               <input type="checkbox" name="pool" id="pool-field" checked>
               <label for="pool-field">Бассейн</label>
@@ -30,10 +30,8 @@
               <label for="parking-field">Парковка</label>
               <input tupe="checkbox" name="lan" id="lan-field">
               <label for="lan-field">Wi-Fi</label>
-            </form>
           </div>
           <div class="type-form">
-            <form action="#" methood="post">
               <h2>Тип жидья</h2>
               <input type="checkbox" name="hotel" id="hotel-form">
               <label for="hotel-form">Гостиница</label>
@@ -41,15 +39,13 @@
               <label for="motel-form">Мотель</label>
               <input type="checkbox" name="apartments" id="apartments-form">
               <label for="apartments-form">Апартаменты</label>
-            </form>
           </div>
           <div class="price-form">
-            <form action="https://echo.htmlacademy.ru" method="post">
             <h2>Стоимость в сутки (Р):</h2>
             <!-- Форма, которую не знаю как делать -->
             <input type="submit" name="button" id="show-button" value="Показать">
-            </form>
           </div>
+        </form>
       </section>
       <section class="navigation-form">
         <div class="count-form">
@@ -65,8 +61,8 @@
         </div>
         <div class="rating-form">
           <ul>
-            <li><a href="#"></a>up</li>
-            <li><a href="#"></a>down</li>
+            <li><a href="#">up</a></li>
+            <li><a href="#">down</a></li>
           </ul>
         </div>
         <article class="hotels">
