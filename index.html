@@ -100,7 +100,33 @@
   			 <img src="img/map.jpg" width="1718" height="748" alt="map image">
   			</div>
   			<div class="search-form">
-  			 <!-- Тут должна быть форма -->
+  				<form action="#" method="post">
+  					<div class="data-in">
+  						<label for="coming-form">Дата заезда:</label>
+  			 			<input type="text" name="coming-date" id="coming-form">
+  			 		</div>
+  			 		<div class="data-out">
+  			 			 <label for="leave-form">Дата выезда:</label>
+  			 			<input type="text" name="leave-date" id="leave-form">
+  			 		</div>
+  			 		<div class="adults">
+  			 			<label for="adult-number">Взрослые</label>
+  			 			<button type="button">-</button>
+  			 			<input type="text" name="adult-number" id="adult-number">
+  			 			<button type="button">+</button>
+  			 		</div>
+  			 		<div class="children">
+  			 			<label for="child-number">Дети:</label>
+  			 			<button type="button">-</button>
+  			 			<input type="text" name="child-number" id="child-number">
+  			 			<button type="button">+</button>
+  			 		</div>
+  			 		<div class="search-button">
+              <label aria-label="Кнопка поиска">
+  			 			<button type="submit">Найти</button>
+              </label>
+  			 		</div>
+  			 	</form>
   			</div>
   		</section>
   	</main>
@@ -110,11 +136,11 @@
   		</div>
       <div class="footer-social">
   		<ul>
-	      <li><a class="social-button" href="#"><img src="img/twitter-logo.svg" width="17" height="15" alt="Twitter"></a>
+	      <li><a class="social-button" href="#" aria-label="Follow me on Twitter"><img src="img/twitter-logo.svg" width="17" height="15" alt="Twitter"></a>
 	      </li>
-	      <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>
+	      <li><a class="social-button" href="#" aria-label="Follow me on Facebook"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>
 	      </li>
-	      <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a>
+	      <li><a class="social-button" href="#" aria-label="Follow me on YouTube"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a>
 	      </li>
         </ul>
       </div>
