@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+/*Header*/
+.main-navigation{
+  color: #000000;
+  background-color: #ffffff;
+}
+.site-navigation a{
+  width:239px;
+  height: 56px;
+
+  color: #000000
+}
+.site-navigation a:hover,
+.site-navigation a:focus  {
+  color: #81b3d2;
+}
+.site-navigation a:active {
+  color: rgba(225,225,225,0.3);
+}
+/*Main*/
