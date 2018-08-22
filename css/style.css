@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: bold;
   color: #000000;
   text-transform: uppercase;
 
@@ -15,9 +15,13 @@ a {
   text-decoration: none;
 }
 /*Header*/
-.main-navigation{
+
+.main-navigation{ 
   color: #000000;
   background-color: #ffffff;
+}
+.site-navigation{
+  list-style: none;
 }
 .site-navigation a{
   width:239px;
@@ -32,4 +36,134 @@ a {
 .site-navigation a:active {
   color: rgba(225,225,225,0.3);
 }
-/*Main*/
+/*Main index*/
+/*-----Пытался сделать через background. не получилось(-----*/
+/*.main-image {
+background-color: #f2f2f2;
+background-image: url("img/background-photo.jpg"); 
+background-position: 0 0;
+background-repeat: no-repeat;
+}*/
+.city-info{
+  background-color: white;
+  text-align: center;
+}
+.city-info b {
+  font-size: 21px;
+  text-align: center;
+}
+.city-info p {
+  color: #333333;
+  font-weight: normal;
+
+}
+.reasons-blue .reasons-item {
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: center;
+}
+/*Не уверен что правильно*/
+/*.reasons-blue .reasons-item:first-child {
+float: left;
+text-align: center;
+}
+.reasons-blue .reasons-item:last-child {
+float: right;
+text-align: center;
+}*/
+
+.reasons-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.reasons-item span,
+.reasons-item p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+.advantages {
+  background-color: white;
+  text-align: center;
+}
+.advantages-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.advantages-item p {
+  color: #333333;
+  line-height: 21px;
+  font-weight: normal;
+}
+.reasons-item .item-grey{
+  background-color: #eeeeee;
+  text-align: center;
+}
+.search {
+  background-color: white;
+  text-align: center;
+}
+.search b {
+  font-size: 30px;
+  line-height: 36px;
+}
+.search p {
+  color: #333333;
+  line-height: 24px;
+}
+.button-brown{
+  color: white;
+  text-transform: uppercase;
+  background-color: #766357;
+} 
+.search .button-brown{
+  width: 586px;
+  height: 86px; 
+  font-size: 21px;
+}
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #604e43;
+}
+.button-brown:active {
+  color:rgba(2555,255,255,0.3);
+  background-color: #503e33;
+}
+.search-form {
+  background-color:white;
+}
+.adults button,
+.children button {
+  width: 38px;
+  height:38px;
+  color: #a9a9a9;
+  background-color: #f2f2f2;
+}
+.button-blue {
+  color: white;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+}
+.button-blue:hover,
+.button-blue:focus{
+  background-color: #669ec0;
+}
+.button-blue:active {
+  color: rgba(2555,255,255,0.3);
+  background-color: #5496bd;
+}
+.search-button .button-blue {
+  width: 458px;
+  height: 58px; 
+  font-size: 26px;
+}
+/*Footer*/
+.main-footer {
+  background-color: rgba(249,251,246,0.9);
+}
+.hastag a{
+  font-size: 21px;
+}
+.footer-social ul {
+  list-style: none;
+}
