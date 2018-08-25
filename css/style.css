@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-
+  width: 1200px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -16,7 +16,7 @@ a {
 }
 /*Header*/
 .main-header {
-  margin-bottom: 95px;
+  margin-bottom: 0px;
 }
 .main-navigation { 
   color: #000000;
@@ -26,23 +26,20 @@ a {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center; 
+  flex-direction: row;
 }
-
 .main-navigation .site-navigation {
   list-style: none;
   /*Позиционирование*/
-  padding: 0;
+  width: 1200px;
+  height: 56px;
+  padding: 22px 22px;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-
-.site-navigation a{
-
+.site-navigation a {
   color: #000000
-  margin:;
 }
 .site-navigation a:hover,
 .site-navigation a:focus  {
@@ -52,6 +49,31 @@ a {
   color: rgba(225,225,225,0.3);
 }
 /*Main index*/
+.main-image {
+  color: grey;
+  background-image: url("../img/background-photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  /*Позиционирование*/
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-image {
+  width: 459px;
+  height: 353px;
+  padding: 61px;
+  margin: 0;
+}
+.poligon-image {
+  width: 1200px;
+  height: 59px;
+  margin: 0;
+  padding: 0;
+  align-items: flex-end;
+}
 
 .city-info {
   background-color: white;
@@ -64,7 +86,9 @@ a {
 .city-info p {
   color: #333333;
   font-weight: normal;
-
+}
+.reasons {
+  display: flex;
 }
 .reasons-blue .reasons-item {
   color: #ffffff;
