@@ -87,8 +87,15 @@ a {
   color: #333333;
   font-weight: normal;
 }
+
+ /*Причины*/
+
 .reasons {
+  padding: 0;
+  margin: 0;
+  width: 1200px;
   display: flex;
+  justify-content: space-between;
 }
 .reasons-blue .reasons-item {
   color: #ffffff;
@@ -109,6 +116,8 @@ a {
 .advantages {
   background-color: white;
   text-align: center;
+
+  width: 1200px;
 }
 .advantages-item h3 {
   font-size: 21px;
@@ -123,6 +132,9 @@ a {
   background-color: #eeeeee;
   text-align: center;
 }
+
+  /*Форма поиска*/
+
 .search {
   background-color: white;
   text-align: center;
