@@ -15,19 +15,34 @@ a {
   text-decoration: none;
 }
 /*Header*/
-
-.main-navigation{ 
+.main-header {
+  margin-bottom: 95px;
+}
+.main-navigation { 
   color: #000000;
   background-color: #ffffff;
+  /*Позиционирование*/
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
-.site-navigation{
+
+.main-navigation .site-navigation {
   list-style: none;
+  /*Позиционирование*/
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
+
 .site-navigation a{
-  width:239px;
-  height: 56px;
 
   color: #000000
+  margin:;
 }
 .site-navigation a:hover,
 .site-navigation a:focus  {
@@ -38,7 +53,7 @@ a {
 }
 /*Main index*/
 
-.city-info{
+.city-info {
   background-color: white;
   text-align: center;
 }
