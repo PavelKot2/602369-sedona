@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 1200px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -116,8 +116,6 @@ a {
 .advantages {
   background-color: white;
   text-align: center;
-
-  width: 1200px;
 }
 .advantages-item h3 {
   font-size: 21px;
