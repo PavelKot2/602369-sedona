@@ -1,7 +1,13 @@
+
+html { 
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+ box-sizing: inherit; 
+}
 body {
   margin: 0 auto;
   padding: 0;
-  width: 1200px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -14,17 +20,24 @@ body {
 a {
   text-decoration: none;
 }
-/*Header*/
-.main-header {
-  margin-bottom: 0px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+/*Header*/
 .main-navigation { 
   color: #000000;
   background-color: #ffffff;
   /*Позиционирование*/
   width: 1200px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
 }
@@ -32,8 +45,7 @@ a {
   list-style: none;
   /*Позиционирование*/
   width: 1200px;
-  height: 56px;
-  padding: 22px 22px;
+  padding: 22px 0;
   margin: 0;
   display: flex;
   justify-content: space-around;
@@ -50,29 +62,31 @@ a {
 }
 /*Main index*/
 .main-image {
-  color: grey;
-  background-image: url("../img/background-photo.jpg");
-  background-position: center;
+  background-image: url("../img/polygon.png"), url("../img/background-photo.jpg");
+  background-position: bottom, top center;
   background-repeat: no-repeat;
   /*Позиционирование*/
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding-top:76px;
+  padding-bottom: 79px;
+  padding-left: 370px;
+  padding-right: 370px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
 }
 .text-image {
   width: 459px;
   height: 353px;
-  padding: 61px;
-  margin: 0;
-}
-.poligon-image {
-  width: 1200px;
-  height: 59px;
-  margin: 0;
   padding: 0;
-  align-items: flex-end;
+  margin: 0 auto;
+}
+.information {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .city-info {
@@ -92,10 +106,14 @@ a {
 
 .reasons {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   width: 1200px;
   display: flex;
   justify-content: space-between;
+}
+.reasons-image{
+  font-size: 0;
+  line-height: 0;
 }
 .reasons-blue .reasons-item {
   color: #ffffff;
@@ -129,6 +147,7 @@ a {
 .reasons-item .item-grey{
   background-color: #eeeeee;
   text-align: center;
+  width: 400px;
 }
 
   /*Форма поиска*/
@@ -138,15 +157,11 @@ a {
   text-align: center;
 
   width: 1200px;
-  height: 0 auto;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center; 
-}
-.search .map {
-  background-clip: content-box;
 }
 .search b {
   font-size: 30px;
@@ -210,12 +225,29 @@ a {
   height: 58px; 
   font-size: 26px;
 }
+/*/sedona-hotels/*/
 .content .hotel-search {
   color: white;
   background-color: #82a1c0;
   background-image: url("../img/bg-form.jpg");
   background-position: center;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat; 
+}
+  .hotel-search {
+  padding: 0;
+  margin: 0;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+}
+.hotel-search .pluses-form {
+  width: 300px;
+}
+.hotel-search .type-form{
+  width: 300px;
+}
+.hotel-search .price-form {
+  width: 600px;
 }
 .hotel-search h2{
   font-size: 16px;
