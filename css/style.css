@@ -89,7 +89,7 @@ img {
   font-size: 0;
   line-height: 0;
   background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
-  background-position: bottom left, top center;
+  background-position: bottom left, top 20% left;
   background-repeat: no-repeat; 
   width: 1200px;
   margin: 0 auto;
@@ -291,18 +291,75 @@ img {
 .navigation-form .search-form {
   background-color:white;
   width: 568px;
+  padding: 55px 55px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   position: absolute;
   top: 0;
   left: 316px;
   z-index: 20;
 }
+.search-form input {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f2f2;
+}
+.search-form .data-in {
+  width: 458px;
+  margin-bottom: 28px;
+}
+.data-in label {
+  margin-right: 21px;
+}
+.data-out label {
+ margin-right: 17px;
+}
+.data-in input,
+.data-out input {
+  width: 344px;
+  padding: 10px 13px;
+
+}
+.data-out {
+  margin-bottom: 28px;
+  }
+.adults {
+  margin-right: 30px;
+}  
+.adults label {
+margin-right: 41px;
+}
+.children label {
+margin-right: 27px;
+}
+.search-form .people-number {
+  width: 458px;
+  margin-bottom: 54px;
+  display: flex;
+}
+.adults input,
+.children input {
+ width: 38px;
+ margin: 0;
+ padding: 6px 15px;
+
+}
 .adults button,
 .children button {
   width: 38px;
-  height:38px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
   color: #a9a9a9;
   background-color: #f2f2f2;
+  border: none;
 }
+
 .button-blue {
   color: white;
   text-transform: uppercase;
@@ -318,7 +375,7 @@ img {
 }
 .search-button .button-blue {
   width: 458px;
-  height: 58px; 
+  height: 58px;
   font-size: 26px;
 }
 .map {
@@ -440,19 +497,20 @@ img {
 }
 .sorting-form .active {
   color: #81b3d2;
-  border-bottom: 3px dashed #81b3d2;
+  border-bottom: 2px dotted #81b3d2;
 }
 .sorting-form a {
 color: rgba(0,0,0,0.3);
-border-bottom: 3px dashed #81b3d2;
+border-bottom: 2px dotted #81b3d2;
 }
-.sorting-form a:hover
+.sorting-form a:hover,
 .sorting-form a:focus {
 color: #81b3d2;
-border-bottom: 3px dashed #81b3d2;
+border-bottom: 2px dotted #81b3d2;
 }
 .sorting-form a:active {
   color: black;
+  border-bottom: none;
 }
 .rating-form {
   width: 110px;
@@ -467,7 +525,24 @@ border-bottom: 3px dashed #81b3d2;
 .rating-form .up-list {
   margin-right: 12px;
 }
-
+.up-list path {
+  fill: #cacaca;
+}
+.down-list path {
+  fill: #81b3d2;
+}
+.up-list path:hover,
+.up-list path:focus {
+  fill: black;
+}
+.down-list path:hover,
+.down-list path:focus {
+  fill: black;
+}
+.up-list path:active,
+.down-list path:active {
+  fill: #81b3d2;
+}
 .search-results {
   margin: 0 auto;
   padding: 0;
@@ -493,8 +568,16 @@ border-bottom: 3px dashed #81b3d2;
 }
 .hotel-info h1{
  font-size: 21px;
+ color: black;
  margin: 0;
- margin-bottom: 3px;
+ margin-bottom: 3px; 
+}
+.hotel-info a:hover,
+.hotel-info a:focus {
+  color: #81b3d2;
+}
+.hotel-info a:active {
+  color:rgba(202,202,202,0.3);
 }
 .hotel-info span{
   color: #333333;
