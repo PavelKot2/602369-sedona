@@ -23,7 +23,9 @@ img {
   max-width: 100%;
   height:auto;
 }
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -143,21 +145,24 @@ img {
   align-items: stretch;
 }
 .reasons-blue .reasons-item {
+  width: 400px;
   margin: auto;
   padding-top: 45px;
   padding-bottom: 60px;
   padding-right: 60px;
   padding-left: 60px;
-  width: 400px;
 
   color: #ffffff;
   background-color: #81b3d2;
   text-align: center;
 }
 .reasons-blue .reasons-image {
+  width: 800px;
+  max-height: 256px;
   margin: auto;
   padding: 0;
-  width: 800px;
+
+  overflow-y: hidden;
 
   font-size: 0;
   line-height: 0;
@@ -166,7 +171,8 @@ img {
 .reasons-item h3 {
   font-size: 21px;
   line-height: 21px;
-
+  margin-top: 0; 
+  margin-bottom: 20px;
   margin-left: 79px;
   margin-right: 79px;
 }
@@ -329,11 +335,18 @@ img {
   margin-bottom: 28px;
   }
 .adults {
-  margin-right: 30px;
+  margin-right: 53px;
+  display: flex;
+  align-items: center;
 }  
+.children {
+  display: flex;
+  align-items: center;
+}
 .adults label {
 margin-right: 41px;
 }
+
 .children label {
 margin-right: 27px;
 }
@@ -358,6 +371,7 @@ margin-right: 27px;
   color: #a9a9a9;
   background-color: #f2f2f2;
   border: none;
+  border-collapse: 
 }
 
 .button-blue {
@@ -435,6 +449,41 @@ margin-right: 27px;
   line-height: 21px;
   position: relative;
 }
+.pluses-form label,
+.type-form label {
+  padding-left: 43px;
+}
+.pluses-form label:not(:last-child),
+.type-form label:not(:last-child) {
+  margin-bottom: 22px;
+}
+.pluses-form input[type="checkbox"] + .checkbox-indicator,
+.type-form input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -1px;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/icons/checkbox-off.svg); 
+  background-repeat: no-repeat;
+}
+.pluses-form input[type="checkbox"]:checked + .checkbox-indicator,
+.type-form input[type="checkbox"]:checked + .checkbox-indicator {
+  background-image: url(../img/icons/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+.pluses-form input[type="checkbox"]:disabled + .checkbox-indicator,
+.type-form input[type="checkbox"]:disabled + .checkbox-indicator {
+  background-image: url(../img/icons/checkbox-off-disabled.svg); 
+  background-repeat: no-repeat;
+}
+.pluses-form input[type="checkbox"]:disabled:checked + .checkbox-indicator,
+.type-form input[type="checkbox"]:disabled:checked + .checkbox-indicator {
+  background-image: url(../img/icons/checkbox-on-disabled.svg); 
+  background-repeat: no-repeat;
+}
 .form-button {
   width: 133px;
   height: 32px;
@@ -450,8 +499,6 @@ margin-right: 27px;
   right: 168px;
   bottom: 33px;
 }
-
-
 .navigation-form-hotels {
   width: 1200px;
   margin: 0 auto;
@@ -460,7 +507,6 @@ margin-right: 27px;
   background-color: white;
   display: flex;
   align-items: center;
-
 }
 .count-form {
   width: 135px;
