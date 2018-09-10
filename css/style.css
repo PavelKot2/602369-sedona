@@ -66,8 +66,8 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
 }
 .site-navigation li {
-  margin-top: 16px;
-  margin-bottom: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .site-navigation li:nth-child(2) {
   margin-right: 240px;
@@ -412,11 +412,11 @@ margin-right: 27px;
   background-position: center;
   background-repeat: no-repeat; 
 }
-  .hotel-search form{
-  padding: 28px 70px 30px 70px;
-  margin: 0 auto;
-  display: flex;
-  position: relative;
+.hotel-search form{
+padding: 28px 70px 30px 70px;
+margin: 0 auto;
+display: flex;
+position: relative;
 }
 .pluses-form,
 .type-form,
@@ -444,9 +444,16 @@ margin-right: 27px;
 .hotel-search h2{
   font-size: 16px;
   line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
+.pluses-form h2,
+.type-form h2 {
+  margin-bottom: 25px;
 }
 .hotel-search label {
   line-height: 21px;
+  font-weight: normal;
   position: relative;
 }
 .pluses-form label,
@@ -460,7 +467,7 @@ margin-right: 27px;
 .pluses-form input[type="checkbox"] + .checkbox-indicator,
 .type-form input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
-  top: -1px;
+  top: 0;
   left: 0;
 
   width: 27px;
@@ -484,13 +491,56 @@ margin-right: 27px;
   background-image: url(../img/icons/checkbox-on-disabled.svg); 
   background-repeat: no-repeat;
 }
+.price-form h2 {
+  margin-bottom: 10px; 
+
+}
+.price-number {
+  width: 314px;
+  margin:0;
+  margin-bottom: 11px;
+  padding: 5px 50px 5px 65px;
+
+  border: 2px solid white;
+
+  position: relative;
+}
+.price-number .left-item {
+  margin-right: 75px;
+}
+.price-number:before {
+  content: " ";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background-color: white;
+}
+.price-number input {
+  width: 35px;
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  color: white;
+
+  border: none;
+  background: none;
+}
 .form-button {
   width: 133px;
   height: 32px;
 
+  font: inherit;
   font-size: 14px;
   line-height: 21px;
+  font-weight: normal;
   color: #ffffff;
+  text-transform: inherit;
   border: 2px solid white;
   background: transparent;
   background-color: transparent;
@@ -498,6 +548,11 @@ margin-right: 27px;
   position: absolute;
   right: 168px;
   bottom: 33px;
+}
+.form-button:hover,
+.form-button:focus {
+  color: black;
+  background-color: white; 
 }
 .navigation-form-hotels {
   width: 1200px;
