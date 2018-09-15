@@ -611,6 +611,7 @@ margin-right: 27px;
   padding: 0;
   background-color: #eeeeee;
   background: url(../img/map.jpg) no-repeat; 
+  background-position: left top;
 }
 .map iframe {
   width: 1200px;
