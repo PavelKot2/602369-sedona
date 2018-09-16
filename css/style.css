@@ -349,6 +349,10 @@ input[type="radio"].visually-hidden {
   padding-left: 13px;
   padding-right: 12px;
 }
+.item-grey:last-child p {
+  padding-left: 16px;
+  padding-right: 13px;
+}
 
   /*Форма поиска*/
 
@@ -477,7 +481,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 .data-in input {
-  width: 345px;
+  width: 343px;
   margin-left: 20px;
 }
 .data-out input {
