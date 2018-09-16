@@ -475,12 +475,16 @@ input[type="radio"].visually-hidden {
   height: 38px;
   margin-bottom: 29px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .data-out {
   width: 458px;
   height: 38px;
   margin-bottom: 31px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .data-in input {
   width: 343px;
