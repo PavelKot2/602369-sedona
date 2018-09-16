@@ -884,9 +884,6 @@ position: relative;
   line-height: 18px;
   font-weight: normal;
 }
-.sorting-form p {
-  margin-right: 40px;
-}
 .sorting-form .active {
   color: #81b3d2;
   border: none;
@@ -1050,15 +1047,37 @@ border-bottom: 1px dotted #81b3d2;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  align-items: flex-end;
   padding-top: 3px;
 }
-.rating-stars {
-  width: 115px;
-  margin: 0;
+.amara-stars {
+  width: 72px;
+  height: 20px;
   padding: 0;
-  padding-right: 3px;
+  margin: 0;
+  background-image: url("../img/icons/star.svg");
+  background-position: top right;
+  background-repeat: repeat-x;
 }
-.star-list {
+.desert-stars {
+  width: 54px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/icons/star.svg");
+  background-position: top right;
+  background-repeat: repeat-x;
+}
+.pocco-stars {
+  width: 35px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/icons/star.svg");
+  background-position: top right;
+  background-repeat: repeat-x;
+}
+/*.star-list {
   width: 110px;
   height: 17px;
   margin: 0 auto;
@@ -1085,18 +1104,18 @@ border-bottom: 1px dotted #81b3d2;
 }
 .star-list li:not(:last-child) {
   margin-right: 6px;
-}
+}*/
 
 .hotel-rating {
   width: 110px;
   height: 27px; 
-  margin-top: 47px;
-  padding: 3px 12px 5px;
-
+  margin-top: 44px;
+  padding: 3px 15px 5px;
   color: #666666;
   line-height: 21px;
   font-weight: normal;
   text-align: center;
+  white-space: nowrap;  
   background-color: #f2f2f2;
 
 }
