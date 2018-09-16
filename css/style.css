@@ -179,6 +179,10 @@ input[type="radio"].visually-hidden {
       -ms-flex-align: stretch;
           align-items: stretch;
 }
+.reasons-blue,
+.reasons-bridge {
+  background-color: #81b3d2;
+}
 .reasons-blue .reasons-item {
   width: 400px;
   margin: 0 auto;
@@ -202,24 +206,29 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
   text-align: center;
 }
-.reasons-image {
+.reasons-blue::after {
+  content: "";
   width: 800px;
   margin: 0;
   padding: 0;
   background-color: #81b3d2;
-
-  font-size: 0;
-  line-height: 0;
-}
-.bridge-image {
-  background-image: url(../img/canyon.jpg);
-  background-repeat: no-repeat;
-  background-position: left top 52%;
-}
-.city-image {
   background-image: url(../img/city.jpg);
   background-repeat: no-repeat;
   background-position: left bottom 46%;
+  font-size: 0;
+  line-height: 0;
+}
+.reasons-bridge::before {
+  content: "";
+  width: 800px;
+  margin: 0;
+  padding: 0;
+  background-color: #81b3d2;
+  background-image: url(../img/canyon.jpg);
+  background-repeat: no-repeat;
+  background-position: left top 52%;
+  font-size: 0;
+  line-height: 0;
 }
 .reasons-item h3 {
   font-size: 21px;
