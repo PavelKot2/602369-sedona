@@ -460,7 +460,7 @@ input[type="radio"].visually-hidden {
 }
 @keyframes slide-open {
     0% {
-        transform: translateX(-100%);
+      transform: translateX(-100%);
     }
     50%{
         transform: translateX(8%);
@@ -516,11 +516,15 @@ input[type="radio"].visually-hidden {
 }
 .data-in input {
   width: 343px;
-  margin-left: 20px;
 }
 .data-out input {
   width: 343px;
-  margin-left: 17px;
+}
+.data-in label {
+  margin-right: 25px;
+}
+.data-out label {
+  margin-right: 20px
 }
 .data-in input,
 .data-out input {
@@ -691,7 +695,7 @@ display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
 position: relative;
-}
+}       
 .hotel-search .pluses-form {
   width: 250px;
   margin-right: 13px;
