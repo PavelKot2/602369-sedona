@@ -516,11 +516,11 @@ input[type="radio"].visually-hidden {
 }
 .data-in input {
   width: 343px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .data-out input {
   width: 343px;
-  margin-left: 17px;
+  margin-left: 21px;
 }
 .data-in input,
 .data-out input {
