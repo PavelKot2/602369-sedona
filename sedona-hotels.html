@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -27,17 +27,17 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="pluses-form">
               <h2>Инфраструктура:</h2>
-              <label class="pool-checkbox">
+              <label class="pool-checkbox" tabindex="1">
                 <input type="checkbox" name="pool" id="pool-field" class="visually-hidden" checked>
                 <span class="checkbox-indicator"></span>
                 Бассейн
               </label>
-              <label class="parking-checkbox">
+              <label class="parking-checkbox" tabindex="1">
                 <input type="checkbox" name="parking" id="parking-field" class="visually-hidden">
                 <span class="checkbox-indicator"></span>
                 Парковка
               </label>
-              <label class="lan-checkbox">
+              <label class="lan-checkbox" tabindex="1">
                 <input type="checkbox" name="wi-fi" id="lan-field" class="visually-hidden">
                 <span class="checkbox-indicator"></span>
                 Wi-Fi
@@ -45,17 +45,17 @@
           </div>
           <div class="type-form">
               <h2>Тип жилья:</h2>
-              <label for="hotel-form">
+              <label for="hotel-form" tabindex="1">
                 <input type="checkbox" name="hotel" id="hotel-form" class="visually-hidden" checked>
                 <span class="checkbox-indicator"></span>
                 Гостиница
               </label>
-              <label for="motel-form">
+              <label for="motel-form" tabindex="1">
                 <input type="checkbox" name="motel" id="motel-form" class="visually-hidden" checked>
                 <span class="checkbox-indicator"></span>
                 Мотель
               </label>
-              <label for="apartments-form">
+              <label for="apartments-form" tabindex="1">
                 <input type="checkbox" name="apartments" id="apartments-form" class="visually-hidden" checked>
                 <span class="checkbox-indicator"></span>
                 Апартаменты

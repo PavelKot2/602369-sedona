@@ -452,50 +452,110 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 316px;
-  animation-name: slide-open;
-  animation-duration: 0.6s;
-  animation-timing-function: ease;
+  -webkit-animation-name: slide-open;
+          animation-name: slide-open;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 .modal-hide {
   display: none;
 }
-@keyframes slide-open {
+@-webkit-keyframes slide-open {
     0% {
-      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
     }
     50%{
-        transform: translateX(8%);
+        -webkit-transform: translateX(8%);
+                transform: translateX(8%);
     }
     65%{
-        transform: translateX(-4%);
+        -webkit-transform: translateX(-4%);
+                transform: translateX(-4%);
     }
     80%{
-        transform: translateX(4%);
+        -webkit-transform: translateX(4%);
+                transform: translateX(4%);
     }
     95%{
-        transform: translateX(-2%);
+        -webkit-transform: translateX(-2%);
+                transform: translateX(-2%);
     }           
     100% {
-        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
     }       
 }
-@keyframes error-shake {
+@keyframes slide-open {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    50%{
+        -webkit-transform: translateX(8%);
+                transform: translateX(8%);
+    }
+    65%{
+        -webkit-transform: translateX(-4%);
+                transform: translateX(-4%);
+    }
+    80%{
+        -webkit-transform: translateX(4%);
+                transform: translateX(4%);
+    }
+    95%{
+        -webkit-transform: translateX(-2%);
+                transform: translateX(-2%);
+    }           
+    100% {
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }       
+}
+@-webkit-keyframes error-shake {
   0%,
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   10%,
   30%,
   50%,
   70%,
   90% {
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+@keyframes error-shake {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
 }
 .search-form input {
@@ -523,16 +583,24 @@ input[type="radio"].visually-hidden {
   height: 38px;
   margin-bottom: 29px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .data-out {
   width: 458px;
   height: 38px;
   margin-bottom: 31px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .data-in input {
   width: 343px;
@@ -814,6 +882,8 @@ position: relative;
   padding-bottom: 5px;
   border: 2px solid #ffffff;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .price-number .left-item {
@@ -1109,7 +1179,9 @@ border-bottom: 1px dotted #81b3d2;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding-top: 3px;
 }
 .amara-stars {
@@ -1267,4 +1339,3 @@ border-bottom: 1px dotted #81b3d2;
 .copyright-lan:active path {
   fill: rgba(189,187,188,0.3);
 }
-
