@@ -968,6 +968,11 @@ position: relative;
   color: #000000;
   background-color: #ffffff; 
 }
+.form-button span {
+  position: relative;
+  top: 0;
+  left: 0;
+}
 .navigation-form-hotels {
   width: 1200px;
   margin: 0 auto;
