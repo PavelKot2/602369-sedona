@@ -179,6 +179,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  position: relative;
+  z-index: 500;
 }
 .reasons-blue,
 .reasons-bridge {
@@ -270,14 +272,14 @@ input[type="radio"].visually-hidden {
   padding-top: 59px;
   padding-left: 50px;
   padding-bottom: 82px;
-  padding-right: 50px
+  padding-right: 50px;
 }
 .suvenires {
   width: 400px;
   padding-top: 55px;
   padding-left: 50px;
   padding-bottom: 82px;
-  padding-right: 50px
+  padding-right: 50px;
 }
 .advantages-item h3 {
   font-size: 21px;
@@ -377,7 +379,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; 
-
+  position: relative;
+  z-index: 500;
 }
 .search b {
   font-size: 30px;
@@ -390,8 +393,6 @@ input[type="radio"].visually-hidden {
   margin-top: 0;
   margin-bottom: 46px;
 }
-
-
 .button-brown{
   color: #ffffff;
   text-transform: uppercase;
@@ -464,54 +465,54 @@ input[type="radio"].visually-hidden {
 }
 @-webkit-keyframes slide-open {
     0% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
     }
     50%{
-        -webkit-transform: translateX(8%);
-                transform: translateX(8%);
+        -webkit-transform: translateY(8%);
+                transform: translateY(8%);
     }
     65%{
-        -webkit-transform: translateX(-4%);
-                transform: translateX(-4%);
+        -webkit-transform: translateY(-4%);
+                transform: translateY(-4%);
     }
     80%{
-        -webkit-transform: translateX(4%);
-                transform: translateX(4%);
+        -webkit-transform: translateY(4%);
+                transform: translateY(4%);
     }
     95%{
-        -webkit-transform: translateX(-2%);
-                transform: translateX(-2%);
+        -webkit-transform: translateY(-2%);
+                transform: translateY(-2%);
     }           
     100% {
-        -webkit-transform: translateX(0%);
-                transform: translateX(0%);
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
     }       
 }
 @keyframes slide-open {
     0% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
     }
     50%{
-        -webkit-transform: translateX(8%);
-                transform: translateX(8%);
+        -webkit-transform: translateY(8%);
+                transform: translateY(8%);
     }
     65%{
-        -webkit-transform: translateX(-4%);
-                transform: translateX(-4%);
+        -webkit-transform: translateY(-4%);
+                transform: translateY(-4%);
     }
     80%{
-        -webkit-transform: translateX(4%);
-                transform: translateX(4%);
+        -webkit-transform: translateY(4%);
+                transform: translateY(4%);
     }
     95%{
-        -webkit-transform: translateX(-2%);
-                transform: translateX(-2%);
+        -webkit-transform: translateY(-2%);
+                transform: translateY(-2%);
     }           
     100% {
-        -webkit-transform: translateX(0%);
-                transform: translateX(0%);
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
     }       
 }
 @-webkit-keyframes error-shake {
@@ -614,7 +615,7 @@ input[type="radio"].visually-hidden {
 }
 .data-out label {
   white-space: nowrap;
-  margin-right: 21px
+  margin-right: 21px;
 }
 .data-in input,
 .data-out input {
@@ -722,8 +723,6 @@ margin-right: 27px;
 .adults button:active {
   color: #81b3d2;
 }
-
-
 .search-button .button-blue {
   width: 458px;
   height: 58px;
