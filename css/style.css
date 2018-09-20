@@ -866,6 +866,10 @@ position: relative;
   background-image: url(../img/icons/checkbox-on-disabled.svg); 
   background-repeat: no-repeat;
 }
+.pluses-form label:focus,
+.type-form label:focus {
+  outline: 2px solid #ffff;
+}
 .price-form h2 {
   margin-left: 2px;
   margin-bottom: 9px; 
